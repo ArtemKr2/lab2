@@ -1,0 +1,271 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 2.2rem;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 2.8rem;
+}
+
+.defolt-container {
+  height: 1080px;
+  min-width: 1280px;
+}
+
+header{
+  height: 20%;
+  background-color: #7ebbee;
+  border-bottom: 0.2rem solid rgb(8, 8, 8);
+  position: relative;
+}
+
+.heading {
+  position: absolute;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  color:rgb(227, 243, 10);
+  overflow: auto;
+}
+
+.heading h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.container-for-text {
+  position: absolute;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  overflow: auto;
+}
+
+.text {
+  height: 100%;
+  display: table;
+}
+
+.text p {
+  text-align: justify;
+  padding: 1rem;
+  display: table-cell;
+  vertical-align: middle;
+  overflow: auto;
+}
+
+main {
+  height: 60%;
+  width: 100%;
+  background-color: #008bfd;
+  position: relative;
+}
+
+main nav {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border-right: 0.2rem solid rgb(8, 8, 8);
+  font-size: 2.8rem;
+  width: 13%;
+  background-color: #7ebbee;
+  overflow: auto;
+}
+
+nav .menu {
+  height: 100%;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li + li {
+  border-top: 0.2rem solid rgb(8, 8, 8);
+}
+
+.menu li {
+  height: 33.333%;
+  width: 100%;
+  display: table;
+}
+
+.menu li a {
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  color: rgb(233, 13, 104);
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  overflow: auto;
+}
+
+.menu li a:hover:not(.active) {
+  background-color: #008bfd;
+}
+
+.menu li a.active {
+  background-color: rgb(30, 224, 30);
+}
+
+main .center {
+  height: 100%;
+  position: absolute;
+  left: 16%;
+  border-right: 0.2rem solid rgb(8, 8, 8);
+  border-left: 0.2rem solid rgb(8, 8, 8);
+  width: 38%;
+  overflow: auto;
+}
+
+.center {
+  background-color: #7ebbee;
+}
+
+main .center p {
+  text-align: justify;
+  padding: 0 20px;
+}
+
+main .right {
+  height: 100%;
+  position: absolute;
+  left: 57%;
+  border-left: 0.2rem solid rgb(8, 8, 8);
+  width: 43%;
+  overflow: auto;
+}
+
+.right .top {
+  height: 20%;
+  border-bottom: 0.2rem solid rgb(8, 8, 8);
+  background-color: #7ebbee;
+  overflow: auto;
+}
+
+.container {
+  min-height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container a img {
+  vertical-align: top;
+  height: 7rem;
+}
+
+.right .bottom {
+  height: 80%;
+}
+
+.bottom {
+  position: relative;
+}
+
+.bottom .first {
+  position: absolute;
+  left: 0;
+  background-color: #7ebbee;
+  height: 100%;
+  width: 48%;
+  border-right: 0.2rem solid rgb(8, 8, 8);
+  overflow: auto;
+}
+
+.bottom .second {
+  position: absolute;
+  left: 52%;
+  background-color: #7ebbee;
+  height: 100%;
+  width: 48%;
+  border-left: 0.2rem solid rgb(8, 8, 8);
+  overflow: auto;
+}
+
+.list {
+  list-style-position: inside;
+  padding: 1rem;
+}
+
+footer {
+  position: relative;
+  height: 20%;
+  border-top: 0.2rem solid rgb(8, 8, 8);
+  background-color: #7ebbee;
+}
+
+a.link {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.container-for-text2 {
+  position: absolute;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  overflow: auto;
+}
+
+.heading2 {
+  position: absolute;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  color:rgb(227, 243, 10);
+  overflow: auto;
+}
+
+.heading2 h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+a.link:link {
+  color: rgb(227, 243, 10);;
+}
+
+a.link:visited {
+  color: rgb(181, 194, 8);
+}
+
+a.link:hover {
+  color: rgb(27, 204, 11);
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  border-radius: 10px;
+  background-color: #f9f9fd;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #7ebbee;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-color: #f9f9fd;
+}
